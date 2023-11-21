@@ -1,7 +1,7 @@
 # Standard AOSP partitions
-/boot             emmc    /dev/block/bootdevice/by-name/boot           flags=slotselect
+/boot             emmc    /dev/block/bootdevice/by-name/boot           flags=slotselect;backup
 /vendor_boot      emmc    /dev/block/bootdevice/by-name/vendor_boot    flags=slotselect;flashimg
-/dtbo             emmc    /dev/block/bootdevice/by-name/dtbo           flags=slotselect
+/dtbo             emmc    /dev/block/bootdevice/by-name/dtbo           flags=slotselect;backup
 /vbmeta           emmc    /dev/block/bootdevice/by-name/vbmeta         flags=slotselect;flashimg
 
 # Needed for time
